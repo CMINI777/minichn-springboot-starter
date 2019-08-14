@@ -15,7 +15,7 @@ import java.util.Date;
 //@Controller
 @RestController        // @RestController = @Controller + @ResponseBody  //IDEA中快捷键使用ctrl+shift+o可以把所有没有用的一些包移除
 @RequestMapping("/user")
-public class UserContoller {
+public class UserController {
 
     @RequestMapping("/getUser")
 //	@ResponseBody
@@ -32,7 +32,6 @@ public class UserContoller {
     }
 
     @RequestMapping("/getUserJson")
-//	@ResponseBody
     public MinichnJSONResult getUserJson() {
 
         User u = new User();
@@ -46,7 +45,6 @@ public class UserContoller {
     }
 
     @RequestMapping("/getUserLombokJson")
-//	@ResponseBody
     public MinichnJSONResult getUserLombokJson() {
 
         UserLombok u = new UserLombok();
