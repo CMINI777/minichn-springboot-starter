@@ -2,6 +2,7 @@ package com.minichn.controller;
 
 import com.minichn.pojo.MinichnJSONResult;
 import com.minichn.pojo.User;
+import com.minichn.pojo.UserLombok;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,11 +22,11 @@ public class UserContoller {
     public User getUser() {
 
         User u = new User();
-        u.setName("minichn未封装（不携带状态）");
+        u.setName("minichn-User未封装（不携带状态）");
         u.setAge(18);
         u.setBirthday(new Date());
-        u.setPassword("minichn未封装（不携带状态）");
-        u.setDesc("hello minichn未封装（不携带状态）~~");
+        u.setPassword("minichn-User未封装（不携带状态）");
+        u.setDesc("hello minichn-User未封装（不携带状态）~~");
 
         return u;
     }
@@ -35,11 +36,25 @@ public class UserContoller {
     public MinichnJSONResult getUserJson() {
 
         User u = new User();
-        u.setName("minichn");
+        u.setName("minichn-User封装");
         u.setAge(18);
         u.setBirthday(new Date());
-        u.setPassword("minichn");
-        u.setDesc("hello minichn~~hello minichn~~");
+        u.setPassword("minichn-User封装");
+        u.setDesc("hello minichn-User封装~~hello minichn-User封装~~");
+
+        return MinichnJSONResult.ok(u);
+    }
+
+    @RequestMapping("/getUserLombokJson")
+//	@ResponseBody
+    public MinichnJSONResult getUserLombokJson() {
+
+        UserLombok u = new UserLombok();
+        u.setName("minichn-UserLombok封装");
+        u.setAge(18);
+        u.setBirthday(new Date());
+        u.setPassword("minichn-UserLombok封装");
+        u.setDesc("hello minichn-UserLombok封装~~POJO搬到龙目岛——Lombok~~");
 
         return MinichnJSONResult.ok(u);
     }
