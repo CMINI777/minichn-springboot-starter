@@ -36,11 +36,11 @@ public class UserContoller {
     public MinichnJSONResult getUserJson() {
 
         User u = new User();
-        u.setName("minichn-User封装");
+        u.setName("minichn-User已封装（携带状态）");
         u.setAge(18);
         u.setBirthday(new Date());
-        u.setPassword("minichn-User封装");
-        u.setDesc("hello minichn-User封装~~hello minichn-User封装~~");
+        u.setPassword("minichn-User已封装（携带状态）");
+        u.setDesc("hello minichn-User已封装（携带状态）~~hello minichn-User已封装（携带状态）~~");
 
         return MinichnJSONResult.ok(u);
     }
@@ -50,11 +50,11 @@ public class UserContoller {
     public MinichnJSONResult getUserLombokJson() {
 
         UserLombok u = new UserLombok();
-        u.setName("minichn-UserLombok封装");
+        u.setName("minichn-UserLombok已封装（携带状态）且POJO搬到龙目岛");
         u.setAge(18);
         u.setBirthday(new Date());
-        u.setPassword("minichn-UserLombok封装");
-        u.setDesc("hello minichn-UserLombok封装~~POJO搬到龙目岛——Lombok~~");
+        u.setPassword("minichn-UserLombok已封装（携带状态）且POJO搬到龙目岛");
+        u.setDesc("hello minichn-UserLombok已封装（携带状态）~~POJO搬到龙目岛（Lombok）~~");
 
         return MinichnJSONResult.ok(u);
     }
