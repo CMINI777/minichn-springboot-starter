@@ -10,10 +10,8 @@ import java.util.Date;
 /**
  * Created by minichn on 2019/8/15 0015.
  * 在POJO类上使用了Lombok，IDE上必须要支持Lombok，否则IDE会报错！
- *
- * 可以和 User 作对比，是否感觉代码简洁
  */
-//@Data                           //包含的范围较广（包含@Getter、@Setter、@ToString、@EqualsAndHashCode，没有无参和全参构造，并且默认所有字段），因此只在特殊情况下才使用@Data
+//@Data    //包含的范围较广（包含@Getter、@Setter、@ToString、@EqualsAndHashCode，没有无参和全参构造，并且默认所有字段），因此只在特殊情况下才使用@Data
 @Getter                         //get方法
 @Setter                         //set方法
 @NoArgsConstructor              //无参构造
