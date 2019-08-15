@@ -54,6 +54,13 @@
 			<optional>true</optional>
 		</dependency>
 
+		<!-- 资源文件属性配置 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+
 	</dependencies>
 
 	<build>

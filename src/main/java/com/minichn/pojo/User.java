@@ -8,6 +8,8 @@ import java.util.Date;
 
 /**
  * Created by minichn on 2019/8/15 0015.
+ *
+ * 可以和 UserLombok 作对比，是不是感觉较多的getter、setter造成代码冗余
  */
 public class User {
 
