@@ -12,7 +12,7 @@
 六、 异常处理；<br>
 七、 热部署；<br>
 八、 使用拦截器；<br>
-九、 POJO搬到龙目岛 [使用Lombok](https://cmini777.gitee.io/2019/08/14/POJO%E6%90%AC%E5%88%B0%E9%BE%99%E7%9B%AE%E5%B2%9B%E2%80%94%E2%80%94Lombok/) <br>
+九、 使用Lombok [使用Lombok](https://cmini777.gitee.io/2019/08/14/POJO%E6%90%AC%E5%88%B0%E9%BE%99%E7%9B%AE%E5%B2%9B%E2%80%94%E2%80%94Lombok/) <br>
 
 -----
 

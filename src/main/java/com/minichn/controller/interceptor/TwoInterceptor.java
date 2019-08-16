@@ -2,8 +2,6 @@ package com.minichn.controller.interceptor;
 
 import com.minichn.pojo.MinichnJSONResult;
 import com.minichn.utils.JsonUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -14,8 +12,6 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 
 public class TwoInterceptor implements HandlerInterceptor {
-
-	final static Logger log = LoggerFactory.getLogger(TwoInterceptor.class);
 	
 	/**
 	 * 在请求处理之前进行调用（Controller方法调用之前）

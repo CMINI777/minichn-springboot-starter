@@ -1,5 +1,6 @@
 package com.minichn.config;
 
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -18,9 +19,10 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
+@Slf4j
 public class LogServiceTakeTime {
 	
-	final static Logger log = LoggerFactory.getLogger(LogServiceTakeTime.class);
+//	final static Logger log = LoggerFactory.getLogger(LogServiceTakeTime.class);
 
 	@Pointcut("execution(* com.minichn.service..*.*(..))")
 	public void performance(){

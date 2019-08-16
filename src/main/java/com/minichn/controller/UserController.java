@@ -3,6 +3,7 @@ package com.minichn.controller;
 import com.minichn.pojo.MinichnJSONResult;
 import com.minichn.pojo.User;
 import com.minichn.pojo.UserLombok;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,8 +14,9 @@ import java.util.Date;
  */
 
 //@Controller
-@RestController        // @RestController = @Controller + @ResponseBody  //IDEA中快捷键使用ctrl+shift+o可以把所有没有用的一些包移除
+@RestController    // @RestController = @Controller + @ResponseBody  //IDEA中快捷键使用ctrl+shift+o可以把所有没有用的一些包移除
 @RequestMapping("/user")
+@Slf4j    //logback日志框架使用
 public class UserController {
 
     @RequestMapping("/getUser")
@@ -54,6 +56,7 @@ public class UserController {
         u.setPassword("minichn-UserLombok已封装（携带状态）且POJO搬到龙目岛");
         u.setDesc("hello minichn-UserLombok已封装（携带状态）~~POJO搬到龙目岛（Lombok）~~");
 
+        log.info("@Slf4j：log.info====执行getUserLombokJson-->(Lombok@log注解)");
         return MinichnJSONResult.ok(u);
     }
 }
